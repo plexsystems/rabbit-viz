@@ -1,0 +1,33 @@
+html, body, #root
+{
+	/* we don't want any of these to scroll */
+	overflow: hidden;
+	height: 100%;
+}
+
+.react-codemirror2 {
+  height: 100%;
+}
+
+.CodeMirror {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.srd-container {
+  background-color: #3c3c3c !important;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+}
+
+.srd-canvas {
+	height: 100%;
+}
+
+.srd-canvas .pointui {
+  fill: rgba(255, 255, 255, 0.5);
+}
