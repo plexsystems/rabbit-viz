@@ -42,7 +42,7 @@ class DefinitionsGraph extends React.Component {
       return (
         <Message
           error={true}
-          header="Invalid cluster definition json"
+          header="Invalid broker definition json"
           list={viewState.errors}
           attached="top"
           icon="exclamation circle" />
@@ -51,8 +51,8 @@ class DefinitionsGraph extends React.Component {
 
     return (
       <Message 
-        content="Please load a cluster definition using the cluster definition editor panel."
-        header="No Cluster Definition Present"
+        content="Please load a broker definition using the editor panel."
+        header="No Broker Definition Present"
         info={true}
         attached="top"
         icon="info circle" />
