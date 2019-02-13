@@ -36,5 +36,11 @@
     "gh-pages": "^2.0.1",
     "react-test-renderer": "^16.8.1",
     "typescript": "^3.3.3"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
