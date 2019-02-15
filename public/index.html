@@ -20,6 +20,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Rabbit Viz</title>
+
+    <!-- 
+      Normally stylesheets should be imported from JavaScript. Unfortunately codemirror.css needs to be loaded first.
+      Including the stylesheet here ensures that. If codemirror is being updated, codemirror.css in the public
+      folder will need to be updated as well. See https://facebook.github.io/create-react-app/docs/using-the-public-folder
+    -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/codemirror.css">
   </head>
   <body>
     <noscript>
