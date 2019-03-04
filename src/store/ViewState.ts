@@ -15,7 +15,7 @@ const state: IViewState = {
   errors: [],
   selectVhost: (evt, data) => null,
   setZoomFunction: () => null,
-  showRoutingKeys: false,
+  showRoutingKeys: true,
   toggleShowRoutingKeys: () => null,
   zoomToFit: () => null
 };

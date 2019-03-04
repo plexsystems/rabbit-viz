@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2019-03-04
+
+### Changed
+
+- Change DefinitionsEditor to a stateful component to support sample code loading
+
+### Added
+
+- Sample broker definition loaded on page load
+
 ## 2019-02-15
 
 ### Changed
