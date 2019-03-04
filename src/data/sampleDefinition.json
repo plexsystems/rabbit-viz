@@ -1,0 +1,66 @@
+{
+  "vhosts": [{
+    "name": "logs"
+  }],
+  "policies": [{
+    "vhost": "logs",
+    "name": "logs",
+    "pattern": ".*",
+    "apply-to": "all",
+    "definition": {
+      "ha-mode": "all",
+      "ha-sync-mode": "manual"
+    },
+    "priority": 0
+  }],
+  "queues": [{
+    "name": "log",
+    "vhost": "logs",
+    "durable": true,
+    "auto_delete": false,
+    "arguments": {}
+  }, {
+    "name": "critical",
+    "vhost": "logs",
+    "durable": true,
+    "auto_delete": false,
+    "arguments": {}
+  }, {
+    "name": "alert",
+    "vhost": "logs",
+    "durable": true,
+    "auto_delete": false,
+    "arguments": {}
+  }],
+  "exchanges": [{
+    "name": "logs",
+    "vhost": "logs",
+    "type": "topic",
+    "durable": true,
+    "auto_delete": false,
+    "internal": false,
+    "arguments": {}
+  }],
+  "bindings": [{
+    "source": "logs",
+    "vhost": "logs",
+    "destination": "log",
+    "destination_type": "queue",
+    "routing_key": "log.*",
+    "arguments": {}
+  }, {
+    "source": "logs",
+    "vhost": "logs",
+    "destination": "critical",
+    "destination_type": "queue",
+    "routing_key": "*.critical",
+    "arguments": {}
+  }, {
+    "source": "logs",
+    "vhost": "logs",
+    "destination": "alert",
+    "destination_type": "queue",
+    "routing_key": "alert.*",
+    "arguments": {}
+  }]
+}
