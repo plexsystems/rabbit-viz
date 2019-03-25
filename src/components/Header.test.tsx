@@ -1,7 +1,7 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
 
-import Header from '../components/Header';
+import Header from './Header';
 
 describe('<Header />', () => {
   it('renders the app name in the header bar', () => {
