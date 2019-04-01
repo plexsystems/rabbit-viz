@@ -1,7 +1,7 @@
 import { mount } from 'enzyme';
 import * as React from 'react';
 
-import GraphToolbar from '../components/GraphToolbar';
+import GraphToolbar from './GraphToolbar';
 import { createDefaultClusterDefinition } from '../store/ClusterDefinition';
 import { createDefaultViewState } from '../store/ViewState';
 
