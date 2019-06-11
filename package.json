@@ -6,11 +6,11 @@
   "dependencies": {
     "codemirror": "^5.43.0",
     "dagre": "^0.8.4",
-    "immer": "^2.0.0",
+    "immer": "^2.1.5",
     "react": "^16.8.1",
     "react-codemirror2": "^5.1.0",
     "react-dom": "^16.8.1",
-    "react-scripts": "^2.1.5",
+    "react-scripts": "^2.1.8",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.85.0",
     "storm-react-diagrams": "^5.2.1"
