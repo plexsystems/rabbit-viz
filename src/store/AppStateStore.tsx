@@ -1,6 +1,5 @@
 import produce from 'immer';
 import * as React from 'react';
-import { IInstance } from 'react-codemirror2';
 import { createDefaultClusterDefinition, IClusterDefinition, IDefinition } from './ClusterDefinition';
 import { ClusterDefinitionContext, ViewStateContext } from './Contexts';
 import { createDefaultViewState, IViewState } from './ViewState';
@@ -50,7 +49,7 @@ export default class AppStateStore extends React.Component<{}, IAppState> {
     );
   }
 
-  private validateDefinitionsJson(editor: IInstance, data: any, value: string) {
+  private validateDefinitionsJson(editor: any, data: any, value: string) {
     if(value.length > 0) {
        try {
         const valueJson = JSON.parse(value);

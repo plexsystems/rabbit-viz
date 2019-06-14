@@ -1,5 +1,4 @@
 import produce from 'immer';
-import { IInstance } from 'react-codemirror2';
 import { DefaultLinkModel, DefaultNodeModel, DiagramEngine, DiagramModel, LinkModel } from "storm-react-diagrams";
 import { distributeElements } from "../helpers/dagre-utils";
 import { IViewState } from "./ViewState";
@@ -59,7 +58,7 @@ export interface IDefinition {
 export interface IClusterDefinition {
   definition: IDefinition;
 
-  validate: (editor: IInstance, data: any, value: string) => void;
+  validate: (editor: any, data: any, value: string) => void;
   isValid: boolean;
 }
 
@@ -81,7 +80,7 @@ const state: IClusterDefinition = {
     vhosts: []
   },
   isValid: true,
-  validate: (editor: IInstance, data: any, value: string) => null
+  validate: (editor: any, data: any, value: string) => null
 };
 
 export function createDefaultClusterDefinition() : IClusterDefinition {
