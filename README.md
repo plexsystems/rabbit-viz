@@ -1,5 +1,7 @@
 # Rabbit Viz
 
+### This project have been archived and is no longer actively maintained. Consider [AliceMQ](https://github.com/alicelabs/alicemq]) as an alternative for visualizing your RabbitMQ instances.
+
 Rabbit Viz is a tool for visualizing [RabbitMQ](https://www.rabbitmq.com/) broker defintions. RabbitMQ broker configuration is presented in the form of a json object, which defines virtual hosts, exchanges, queues, policies, and bindings. Rabbit Viz will take this definition json object and generate a visual graph based on the configuration.
 
 **Currently supported definition attributes:**
